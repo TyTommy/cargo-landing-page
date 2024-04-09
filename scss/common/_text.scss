@@ -1,0 +1,102 @@
+.section-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    text-transform: capitalize;
+
+    .highlighted {
+        color: var(--bright-color);
+    }
+}
+
+body {
+    font-family: $default-font;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $title-font;
+    color: $title-color;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 65px;
+    font-weight: 600;
+
+    @media only screen and (min-width: $phone-width) and (max-width:$tablet-width) {
+        font-size: 44px;
+        line-height: 55px;
+    }
+
+    @media only screen and (max-width:$phone-width) {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+
+    @media only screen and (min-width: $phone-width) and (max-width:$tablet-width) {
+        font-size: 44px;
+        line-height: 55px;
+    }
+
+    @media only screen and (max-width:$phone-width) {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+
+    @media only screen and (max-width:$phone-width) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+
+    @media only screen and (max-width:$phone-width) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+h5 {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.16;
+    font-weight: 500;
+
+    @media only screen and (max-width:$phone-width) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    @media only screen and (max-width:$phone-width) {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

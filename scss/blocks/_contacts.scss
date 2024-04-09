@@ -1,0 +1,49 @@
+.contacts {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 72px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+
+        &-group {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    }
+
+    &__details {
+        background-color: $table-background-color;
+        padding: 40px 70px 55px 50px;
+
+        &-row {
+            display: flex;
+
+            td {
+                min-width: 175px;
+                max-width: 445px;
+            }
+
+            &+& {
+                border-top: 1px solid $table-border-color;
+                padding-top: 32px;
+                margin-top: 8px;
+            }
+
+            td+td {
+                margin-left: 55px;
+            }
+        }
+    }
+}

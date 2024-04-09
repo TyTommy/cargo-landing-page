@@ -1,0 +1,61 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    padding: 60px 60px 30px 120px;
+
+    .footer-container {
+        display: flex;
+    }
+
+    .site-map-1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 134px;
+        gap: 40px;
+    }
+
+    .site-map-2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 95px;
+        gap: 25px;
+    }
+
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        margin-left: 180px;
+        gap: 32px;
+
+        &__links {
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            background-color: $button-background-color;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+
+            font-family: $default-font;
+            font-size: 13px;
+            line-height: 20px;
+            text-transform: uppercase;
+
+            img {
+                margin-left: 6px;
+            }
+        }
+    }
+
+    h5 {
+        color: white;
+
+        &.copyright {
+            text-align: center;
+            margin-top: 80px;
+        }
+    }
+}

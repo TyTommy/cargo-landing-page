@@ -1,0 +1,70 @@
+.steps {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 50px 0 0 50px;
+
+        .card {
+            display: flex;
+            gap: 55px;
+            padding: 32px 30px 32px 96px;
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                max-width: 568px;
+
+                .underline {
+                    width: 86px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $phone-width) and (max-width:$tablet-width) {
+        &__container {
+            gap: 16px;
+            margin: 50px 0 0 0;
+
+            .card {
+                display: flex;
+                padding: 40px 80px;
+
+                &__image {
+                    display: none;
+                }
+
+                &__content {
+                    gap: 24px;
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (max-width:$phone-width) {
+        &__container {
+            gap: 14px;
+            margin: 30px 0 0 0;
+
+            .card {
+                display: flex;
+                padding: 24px 24px 24px 47px;
+
+                &__image {
+                    display: none;
+                }
+
+                &__content {
+                    gap: 16px;
+
+                    .underline {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

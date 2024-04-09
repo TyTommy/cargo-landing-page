@@ -1,0 +1,10 @@
+a {
+    color: $title-color;
+    font-weight: 700;
+    border-bottom: 3px solid $accent-color;
+}
+
+a,
+.underline {
+    border-bottom: 3px solid $accent-color;
+}

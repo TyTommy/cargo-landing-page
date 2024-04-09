@@ -1,0 +1,67 @@
+.employees {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        column-gap: 30px;
+        margin-top: 72px;
+
+        .card {
+            display: flex;
+            padding: 30px 80px;
+            gap: 40px;
+
+            background: $primary-color;
+            background: linear-gradient(90deg, $primary-color 8%, transparent 8%);
+
+            &__content {
+                p {
+                    margin-top: 12px;
+                }
+
+                .underline {
+                    margin-top: 16px;
+                    margin-bottom: 30px;
+                    width: 86px;
+                }
+
+                ol {
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $phone-width) and (max-width:$tablet-width) {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+
+            .card {
+                flex-direction: column;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width:$phone-width) {
+        &__container {
+            grid-template-columns: 1fr;
+
+            .card {
+                padding: 24px 50px;
+                gap: 16px;
+                align-items: center;
+                justify-content: center;
+
+                &__image {
+                    width: 100px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

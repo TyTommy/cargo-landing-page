@@ -1,0 +1,12 @@
+section {
+    margin: 110px 100px;
+
+    @media only screen and (min-width: $phone-width) and (max-width:$tablet-width) {
+        margin: 120px 40px;
+    }
+
+
+    @media only screen and (max-width:$phone-width) {
+        margin: 75px 15px;
+    }
+}

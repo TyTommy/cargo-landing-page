@@ -1,0 +1,90 @@
+.info {
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: $primary-color;
+        background-image: url("../../assets/images/truck.png");
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        display: grid;
+        column-gap: 140px;
+        row-gap: 62px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 40px;
+
+        p {
+            margin-top: 16px;
+        }
+    }
+
+    @media only screen and (min-width: $tablet-width) {
+        &__title-container {
+            background-position: right;
+            background-origin: content-box;
+            height: 455px;
+            padding-left: 90px;
+
+            h2 {
+                color: white;
+                max-width: 360px;
+            }
+        }
+
+        &__container {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 72px;
+            margin-left: 66px;
+            margin-right: 142px;
+        }
+    }
+
+
+
+    @media only screen and (min-width: $phone-width) and (max-width:$tablet-width) {
+        &__title-container {
+            height: 383px;
+            padding-left: 85px;
+            background-position: left;
+            background-origin: content-box;
+
+            h2 {
+                color: white;
+                max-width: 165px;
+            }
+        }
+
+        &__container {
+            margin-top: 50px;
+            margin-left: 115px;
+            margin-right: 76px;
+            row-gap: 50px;
+        }
+
+        &__item {
+            gap: 50px;
+        }
+    }
+
+
+    @media only screen and (max-width:$phone-width) {
+        &__title-container {
+            background: none;
+        }
+
+        &__container {
+            margin-top: 48px;
+            row-gap: 38px;
+        }
+
+        &__item {
+            gap: 16px;
+        }
+    }
+}
